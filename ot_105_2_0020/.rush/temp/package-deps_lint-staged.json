@@ -1,0 +1,27 @@
+{
+  "files": {
+    "libs/ot_105_2_0020/.eslintrc": "ef6f20318336bae681b665a589c9de24668a42fe",
+    "libs/ot_105_2_0020/.stylelintrc": "9ec71e91ab3ed5e7a665a38610e59ec27bb1a67f",
+    "libs/ot_105_2_0020/README.md": "2f34a03d3dcb270c20d4ccaf2268f45c977471a3",
+    "libs/ot_105_2_0020/package.json": "17bb9948da5a3e0bdda746dc93d89e1245c19030",
+    "libs/ot_105_2_0020/src/index.ts": "9f1367522e09c73fd98982451c3292cb1774f478",
+    "libs/ot_105_2_0020/src/lib/NoAuthTemplate/Copyright.scss": "ee1acd78b603bd5f69eb103f2858727e7736585c",
+    "libs/ot_105_2_0020/src/lib/NoAuthTemplate/Copyright.tsx": "ddb1cd2718d3f7a5283f4f78da18312184e6affc",
+    "libs/ot_105_2_0020/src/lib/NoAuthTemplate/GroupInfoCards.scss": "bbc9034e97ae100a8d817c74ce78f77b628bdb31",
+    "libs/ot_105_2_0020/src/lib/NoAuthTemplate/GroupInfoCards.tsx": "6c0393050673b4e612411a9ccb6e47a52c5a2421",
+    "libs/ot_105_2_0020/src/lib/NoAuthTemplate/Info.scss": "ae749fca246ef3409c350c08ac96342ddabc935c",
+    "libs/ot_105_2_0020/src/lib/NoAuthTemplate/Info.tsx": "a5317aaeaf2cd0676f88c4fd88e4260f2117124f",
+    "libs/ot_105_2_0020/src/lib/NoAuthTemplate/InfoCard.tsx": "78570845043abe25fbeba5da4b05d0954cb5c09b",
+    "libs/ot_105_2_0020/src/lib/NoAuthTemplate/NoAuthTemplate.scss": "21361680b2de292b1b3697fbf9b2778a134466ae",
+    "libs/ot_105_2_0020/src/lib/NoAuthTemplate/NoAuthTemplate.tsx": "b1a99c21c069306e87c7c3dd444b01837a3c9b6e",
+    "libs/ot_105_2_0020/src/lib/NoAuthTemplate/mock.json": "f0feaa06dda649119641e3090fd2485f14fbd807",
+    "libs/ot_105_2_0020/src/lib/NoAuthTemplate/types.tsx": "38a2203373aede837a9fe7554fedd5a3729e9682",
+    "libs/ot_105_2_0020/src/lib/PasswordChange/Login.scss": "082540ef553c3c1e16eb43b25b068a87f124109f",
+    "libs/ot_105_2_0020/src/lib/PasswordChange/PasswordChange.tsx": "6d27865494aedbc759079105dbfc6bbbd7b16391",
+    "libs/ot_105_2_0020/src/lib/routing.tsx": "cbf0cd15134d377c7cf69a9283b31295ba2c52e7",
+    "libs/ot_105_2_0020/src/react-app-env.d.ts": "d68e4b08bf3e1744d93882dccb00b0d5bfd5ad1d",
+    "libs/ot_105_2_0020/tsconfig.json": "c9eb00aef618108b9bdb00858eeb32396db2f954",
+    "libs/ot_105_2_0020/.rush/temp/shrinkwrap-deps.json": "2945d85b0030a393449ecbd931008e79e511106f"
+  },
+  "arguments": "react-scripts lint-staged "
+}

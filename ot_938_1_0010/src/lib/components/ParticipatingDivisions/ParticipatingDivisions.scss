@@ -1,0 +1,38 @@
+.division-tagbox {
+  margin: 5px 0;
+
+  .division-tagbox-button {
+    padding: 0;
+  }
+}
+
+.groupTag {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+
+  .itemTag {
+    display: flex;
+    align-items: center;
+    background: #e8f4fa;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 10px;
+
+    span:last-child {
+      cursor: pointer;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.spin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  height: 100%;
+}

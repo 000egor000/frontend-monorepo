@@ -1,0 +1,45 @@
+.task-detail {
+  .task-detail-card {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .task-inputForm {
+    iframe {
+      border: none;
+    }
+  }
+
+  .task-params {
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 5px;
+
+      .row-container {
+        width: calc(100% - 20px);
+        display: grid;
+        column-gap: 20px;
+        grid-template-areas: ". .";
+        grid-template-columns: 50% 50%;
+      }
+    }
+  }
+
+  .additional-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    .margin-attr {
+      margin-right: 20px;
+    }
+  }
+
+  .scroll-area {
+    height: 100%;
+  }
+}

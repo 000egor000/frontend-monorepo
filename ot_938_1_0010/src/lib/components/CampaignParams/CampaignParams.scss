@@ -1,0 +1,20 @@
+.campaign-params-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 5px;
+
+  .campaign-params-form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    .campaign-params-form-row-item {
+      min-width: calc(50% - 10px);
+    }
+  }
+}
+
+.scroll-area {
+  height: 100%;
+}

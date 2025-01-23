@@ -1,0 +1,42 @@
+{
+  "name": "@atollis/ot_105_1_0010",
+  "version": "1.0.0",
+  "description": "Desktop page",
+  "private": true,
+  "author": "ATOLLis team",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "react-scripts lint src/**/*.{ts,tsx} && stylelint **/*.scss --fix",
+    "lint-staged": "react-scripts lint-staged",
+    "test:watch": "react-scripts test --watchAll=false",
+    "test": "react-scripts test --watchAll=false"
+  },
+  "dependencies": {
+    "react": "18.2.0"
+  },
+  "devDependencies": {
+    "@atollis/react-scripts": "workspace:*",
+    "@atollis/eslint-config": "workspace:*",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/dom": "~8.17.1",
+    "@types/react": "~18.2.18",
+    "@types/react-dom": "~18.2.18",
+    "react-dom": "18.2.0",
+    "stylelint-config-recommended-scss": "7.0.0",
+    "stylelint": "14.13.0",
+    "typescript": "^4.5.5",
+    "ts-jest": "~29.1.1"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "react-scripts lint --fix --",
+      "react-scripts test --findRelatedTests --watchAll=false --silent"
+    ],
+    "*.scss": [
+      "stylelint --fix"
+    ]
+  }
+}

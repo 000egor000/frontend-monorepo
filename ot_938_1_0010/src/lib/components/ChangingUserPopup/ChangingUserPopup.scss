@@ -1,0 +1,20 @@
+@use "@atollis/ot_105_5_0090/scss/theme.scss" as theme;
+
+.changing-user-popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.changing-user-popup-error {
+  width: 400px;
+  margin: 0;
+
+  @include theme.themed() {
+    color: theme.t("formErrorHeaderText");
+  }
+}
+
+.ant-select-dropdown {
+  z-index: 9999;
+}

@@ -1,0 +1,55 @@
+.campaigns-detail {
+  .campaigns-detail-card {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .input-form {
+    iframe {
+      border: none;
+    }
+  }
+
+  .campaign-params {
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 5px;
+
+      .flex-row-container {
+        display: flex;
+        gap: 20px;
+      }
+
+      .flex-row-container > * {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+    }
+  }
+}
+
+button.detailFooterBtn {
+  background: #d9534f;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0;
+}
+
+.spin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  height: 100%;
+}
+
+iframe#webpack-dev-server-client-overlay {
+  display: none !important;
+}

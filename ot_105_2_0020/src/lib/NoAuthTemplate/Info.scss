@@ -1,0 +1,13 @@
+@use '@atollis/ot_105_5_0090/scss/theme.scss' as theme;
+
+.info {
+  & > p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 40px;
+    @include theme.themed() {
+      color: theme.t('textInfo');
+    }
+  }
+}

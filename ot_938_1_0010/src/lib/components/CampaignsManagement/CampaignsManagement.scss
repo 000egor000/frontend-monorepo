@@ -1,0 +1,14 @@
+.detail-content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: 100%;
+  height: 100%;
+}
+
+.detail-content.expanded {
+  grid-template-columns: 1fr;
+
+  .detail-content__left-card {
+    display: none;
+  }
+}

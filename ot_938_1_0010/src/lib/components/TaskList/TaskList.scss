@@ -1,0 +1,129 @@
+@use "@atollis/ot_105_5_0090/scss/theme.scss" as theme;
+
+// TODO create new theme naming?
+.task-list-card {
+  &__body {
+    height: calc(100% - 94px);
+
+    .dx-dropdowneditor.dx-state-active .dx-dropdowneditor-icon,
+    .dx-dropdowneditor.dx-dropdowneditor-active .dx-dropdowneditor-icon,
+    .dx-dropdowneditor.dx-state-hover:not(.dx-custom-button-hovered)
+      .dx-dropdowneditor-icon {
+      background: transparent;
+    }
+
+    .dx-editor-outlined.dx-texteditor-with-floating-label,
+    .dx-editor-outlined.dx-texteditor-with-label {
+      margin: 17px 20px 0 20px;
+    }
+  }
+
+  &.card.card-container {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    @include theme.themed() {
+      background: theme.t("usersListCardBg");
+      border-right: theme.t("usersListCardBorder");
+    }
+
+    & > .card__header > .header__default {
+      @include theme.themed() {
+        border-bottom: theme.t("usersListCardBorder");
+      }
+    }
+  }
+
+  .presets-select-box {
+    margin: 10px 20px 0px 20px;
+  }
+
+  .search-input {
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: unset;
+  }
+
+  .task-list {
+    .ant-list-item {
+      position: relative;
+
+      &:hover {
+        background: theme.$listItemBgColor-hover--light;
+        cursor: pointer;
+      }
+    }
+
+    .task-list-custom-load-panel {
+      z-index: 1499 !important;
+
+      .dx-loadindicator {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .task-item {
+      display: grid;
+      gap: 5px;
+      padding: 0 20px;
+      grid-template-areas: "activeInd name" "activeInd status";
+      grid-template-columns: auto 1fr;
+
+      &__name {
+        grid-area: name;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+
+        @include theme.themed() {
+          color: theme.t("detailLeftListTextColor");
+        }
+      }
+
+      &__type {
+        grid-area: status;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+
+        @include theme.themed() {
+          color: theme.t("detailLeftListAdditionalTextColor");
+        }
+      }
+
+      .active-indicator {
+        grid-area: activeInd;
+        align-self: center;
+        justify-self: center;
+        height: 0;
+        width: 0;
+        border-radius: 100%;
+        border: 3px solid;
+        color: theme.$listItemBgColor-select--light;
+        background: theme.$listItemBorderColor-focus--light;
+        position: relative;
+        left: -5px;
+        display: none;
+      }
+
+      &-active {
+        .active-indicator {
+          display: block;
+          height: 10px;
+          width: 10px;
+        }
+      }
+    }
+  }
+  .task-list-wrapper {
+    height: 100%;
+    margin: 10px 5px;
+  }
+}

@@ -1,0 +1,112 @@
+@use "@atollis/ot_105_5_0090/scss/theme.scss" as theme;
+
+// TODO create new theme naming?
+.report-list-card {
+  &.card.card-container {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    @include theme.themed() {
+      background: theme.t("usersListCardBg");
+      border-right: theme.t("usersListCardBorder");
+    }
+
+    & > .card__header > .header__default {
+      @include theme.themed() {
+        border-bottom: theme.t("usersListCardBorder");
+      }
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    margin: 0px 20px;
+    width: 238px;
+    margin-top: 10px;
+  }
+
+  .presets-select-box {
+    margin: 10px 20px 0px 20px;
+  }
+
+  &__body {
+    height: calc(100% - 94px);
+
+    .dx-dropdowneditor.dx-state-hover:not(.dx-custom-button-hovered),
+    .dx-dropdowneditor-icon,
+    .dx-dropdowneditor.dx-state-active .dx-dropdowneditor-icon,
+    .dx-dropdowneditor.dx-dropdowneditor-active .dx-dropdowneditor-icon {
+      background: transparent;
+    }
+
+    .dx-editor-outlined.dx-texteditor-with-floating-label,
+    .dx-editor-outlined.dx-texteditor-with-label {
+      margin: 17px 20px 0 20px;
+    }
+
+    .report-list {
+      padding: 10px 0;
+
+      .dx-list-search.dx-texteditor.dx-editor-outlined {
+        @include theme.themed() {
+          background: theme.t("bgCI");
+          margin: 0 20px 10px 20px;
+        }
+      }
+
+      .dx-list-item {
+        padding: 0 20px;
+      }
+
+      .report-list-custom-load-panel {
+        z-index: 1499 !important;
+
+        .dx-loadindicator {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+
+  .ant-list-items {
+    .ant-list-item {
+      padding: 12px 20px;
+    }
+
+    .ant-list-item:hover {
+      background-color: rgba(255, 236, 172, 0.5);
+      cursor: pointer;
+    }
+  }
+
+  .report-item {
+    display: grid;
+    gap: 5px;
+
+    &__name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+
+      @include theme.themed() {
+        color: theme.t("detailLeftListTextColor");
+      }
+    }
+
+    &__type {
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+
+      @include theme.themed() {
+        color: theme.t("detailLeftListAdditionalTextColor");
+      }
+    }
+  }
+}

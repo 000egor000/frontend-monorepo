@@ -1,0 +1,13 @@
+@use '@atollis/ot_105_5_0090/scss/theme.scss' as theme;
+
+.copyright {
+  & > span {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.0025em;
+
+    @include theme.themed() {
+      color: theme.t('textCopyright');
+    }
+  }
+}

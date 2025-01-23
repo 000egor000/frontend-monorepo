@@ -1,0 +1,22 @@
+@use "@atollis/ot_105_5_0090/scss/theme.scss" as theme;
+
+.related-tasks-table {
+  td a {
+    @include theme.themed() {
+      color: theme.t("linkColor");
+    }
+  }
+}
+
+.related-tasks-header {
+  padding-left: 20px;
+
+  @include theme.themed() {
+    color: theme.t("linkColor");
+  }
+
+  &.disabled {
+    pointer-events: none;
+    text-decoration: none;
+  }
+}

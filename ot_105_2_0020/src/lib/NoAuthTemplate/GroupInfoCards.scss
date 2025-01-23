@@ -1,0 +1,50 @@
+@use '@atollis/ot_105_5_0090/scss/theme.scss' as theme;
+
+.group-info-cards {
+  & > *:not(:first-child) {
+    margin-top: 32px;
+  }
+
+  .info-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 5px 25px;
+
+    :first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      border-radius: 4px;
+      @include theme.themed() {
+        background: theme.t('borderInfoCard');
+      }
+    }
+
+    p {
+      &.info-card__title {
+        @include theme.themed() {
+          color: theme.t('textInfoCardBig');
+        }
+
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 1em;
+      }
+
+      &.info-card__description {
+        margin-top: 10px;
+        @include theme.themed() {
+          color: theme.t('textInfoCard');
+        }
+
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+      }
+    }
+  }
+}

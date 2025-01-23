@@ -1,0 +1,15 @@
+{
+  "files": {
+    "libs/ot_105_5_0130/.eslintignore": "e130857a28a0af22d639ddd561c0908d2dcefe5d",
+    "libs/ot_105_5_0130/.eslintrc": "ef6f20318336bae681b665a589c9de24668a42fe",
+    "libs/ot_105_5_0130/README.md": "6939f5235f82f06a5a6b0de5e31dc37e2ccc2830",
+    "libs/ot_105_5_0130/package.json": "b6ad8f365186c377e0abc7d6530647cc703c551c",
+    "libs/ot_105_5_0130/src/index.ts": "8c8592544a2538cf0cc477f84af5165e32420291",
+    "libs/ot_105_5_0130/src/lib/formBuilderLinks.tsx": "66ae012e6cd9c6be01fe949690e55698df8ad52c",
+    "libs/ot_105_5_0130/src/lib/formBuilderRoutes.tsx": "d70ef6e9f4bd96c7afbe4672b9ad7ee8e71205a5",
+    "libs/ot_105_5_0130/src/react-app-env.d.ts": "d68e4b08bf3e1744d93882dccb00b0d5bfd5ad1d",
+    "libs/ot_105_5_0130/tsconfig.json": "45914c9220481b2cb66312bdbb2ca9ee66d4360d",
+    "libs/ot_105_5_0130/.rush/temp/shrinkwrap-deps.json": "d9202f59934c44735fff4a95e604c440ccfce049"
+  },
+  "arguments": "react-scripts lint-staged "
+}

@@ -1,0 +1,149 @@
+@use "@atollis/ot_105_5_0090/scss/theme.scss" as theme;
+
+// TODO create new theme naming?
+.campaigns-list-card {
+  .dx-list.dx-list-with-search .dx-scrollable-wrapper {
+    height: calc(100% - 87px);
+  }
+
+  &.card.card-container {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    @include theme.themed() {
+      background: theme.t("usersListCardBg");
+      border-right: theme.t("usersListCardBorder");
+    }
+
+    & > .card__header > .header__default {
+      @include theme.themed() {
+        border-bottom: theme.t("usersListCardBorder");
+      }
+    }
+  }
+
+  .presets-select-box {
+    margin: 10px 20px 0px 20px;
+  }
+
+  &__body {
+    height: calc(100% - 48px);
+
+    .dx-dropdowneditor.dx-state-active .dx-dropdowneditor-icon,
+    .dx-dropdowneditor.dx-dropdowneditor-active .dx-dropdowneditor-icon,
+    .dx-dropdowneditor.dx-state-hover:not(.dx-custom-button-hovered)
+      .dx-dropdowneditor-icon {
+      background: transparent;
+    }
+
+    .dx-editor-outlined.dx-texteditor-with-floating-label,
+    .dx-editor-outlined.dx-texteditor-with-label {
+      margin: 17px 20px 0 20px;
+    }
+
+    .campaigns-list {
+      padding: 10px 0;
+
+      .dx-list-search.dx-texteditor.dx-editor-outlined {
+        @include theme.themed() {
+          background: theme.t("bgCI");
+          margin: 0 20px 10px 20px;
+        }
+      }
+
+      .dx-list-item {
+        padding: 0 20px;
+
+        &-content {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      .campaigns-list-custom-load-panel {
+        z-index: 1499 !important;
+
+        .dx-loadindicator {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      .campaigns-item {
+        display: grid;
+        gap: 5px;
+
+        &__name {
+          white-space: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 18px;
+
+          @include theme.themed() {
+            color: theme.t("detailLeftListTextColor");
+          }
+        }
+
+        &__type {
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+
+          @include theme.themed() {
+            color: theme.t("detailLeftListAdditionalTextColor");
+          }
+        }
+      }
+    }
+  }
+
+  .spin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .campaigns-list {
+    .ant-spin-container {
+      li.ant-list-item {
+        padding: 5px 20px;
+
+        &:hover {
+          background-color: #e8f4fa;
+          color: #333;
+          cursor: pointer;
+        }
+
+        &:active {
+          border: 1px solid #198dc8;
+        }
+
+        &:has(div.active) {
+          background-color: #ffecac;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    margin: 10px 20px !important;
+    padding: 8px !important;
+    border: 1px solid #d3d3d3 !important;
+    border-radius: 7px !important;
+    width: 85%;
+    background-color: #e8f4fa !important;
+
+    input {
+      background-color: #e8f4fa !important;
+
+      &::placeholder {
+        color: #bdbdbd !important;
+      }
+    }
+  }
+}

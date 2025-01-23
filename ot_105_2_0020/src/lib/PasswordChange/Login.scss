@@ -1,0 +1,39 @@
+@use '@atollis/ot_105_5_0090/scss/theme.scss' as theme;
+
+.login {
+  width: 320px;
+  height: fit-content;
+  box-sizing: border-box;
+  border-radius: 7px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include theme.themed() {
+    background: theme.t('bgForm');
+    color: theme.t('textApp');
+  }
+
+  .dx-item.dx-box-item &__btns.dx-field-item {
+    padding-top: 20px;
+
+    .dx-item.dx-box-item:last-child {
+      flex: none !important;
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+  .flex-group {
+    & > :not(:first-child) {
+      margin-left: 20px;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

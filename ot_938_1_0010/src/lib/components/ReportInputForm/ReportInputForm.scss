@@ -1,0 +1,21 @@
+@use "@atollis/ot_105_5_0090/scss/theme.scss" as theme;
+
+.report-input-form {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+
+  iframe {
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    @include theme.themed() {
+      background: theme.t("iframeBgColor");
+      box-shadow: theme.t("iframeBoxShadow");
+    }
+  }
+}

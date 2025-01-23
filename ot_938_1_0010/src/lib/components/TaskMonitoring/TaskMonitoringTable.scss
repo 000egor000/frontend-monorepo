@@ -1,0 +1,30 @@
+@use "@atollis/ot_105_5_0090/scss/theme.scss" as theme;
+
+.task-table {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 20px 20px 24px;
+
+  td a {
+    @include theme.themed() {
+      color: theme.t("linkColor");
+    }
+  }
+
+  tr.dx-row.is-blocked td,
+  tr.dx-row.is-blocked td a {
+    @include theme.themed() {
+      color: theme.t("tableCellUnlockedColor");
+    }
+  }
+
+  .value-wrapper {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    white-space: normal;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
+}

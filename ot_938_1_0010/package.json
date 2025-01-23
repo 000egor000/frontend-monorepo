@@ -1,0 +1,76 @@
+{
+  "name": "@atollis/ot_938_1_0010",
+  "version": "1.0.0",
+  "description": "Task and Project Management library",
+  "private": true,
+  "author": "ATOLLis team",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "react-scripts lint src/**/*.{ts,tsx} && stylelint **/*.scss --fix",
+    "lint-staged": "react-scripts lint-staged",
+    "test:watch": "react-scripts test --watchAll=false",
+    "test": "react-scripts test --watchAll=false"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.0",
+    "ramda": "^0.28.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
+    "redux": "~4.2.0",
+    "ka-table": "^8.2.0",
+    "@atollis/ot_105_5_0070": "workspace:*",
+    "@atollis/ot_105_5_0090": "workspace:*",
+    "@atollis/ot_105_5_0080": "workspace:*",
+    "@atollis/ot_938_5_0010": "workspace:*",
+    "@atollis/ot_105_7_0010": "workspace:*",
+    "@atollis/ot_105_5_0130": "workspace:*",
+    "react-error-boundary": "~3.1.4",
+    "@atollis-ui/scroll-area": "~0.0.12",
+    "@atollis-ui/tabs": "~0.0.12",
+    "@atollis-ui/table": "~0.0.14",
+    "@atollis-ui/input": "~0.6.0",
+    "@atollis-ui/spin": "~0.0.1",
+    "antd": "~5.8.1",
+    "dayjs": "^1.11.9",
+    "@atollis-ui/list": "~0.0.2",
+    "classnames": "^2.3.2",
+    "@atollis-ui/button": "~0.3.2",
+    "@atollis-ui/search-field": "~0.2.2",
+    "@atollis-ui/radio": "~0.1.3",
+    "@atollis-ui/icons": "~0.1.9",
+    "react-modal": "~3.16.1",
+    "@atollis-ui/modal": "~0.1.2"
+  },
+  "devDependencies": {
+    "@atollis/react-scripts": "workspace:*",
+    "@atollis/eslint-config": "workspace:*",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/dom": "~8.17.1",
+    "@types/jest": "^27.4.0",
+    "@types/ramda": "^0.28.4",
+    "@types/react": "~18.2.18",
+    "@types/react-dom": "~18.2.18",
+    "@types/react-redux": "^7.1.23",
+    "stylelint-config-recommended-scss": "7.0.0",
+    "stylelint": "14.13.0",
+    "typescript": "^4.5.5",
+    "ts-jest": "~29.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "react-scripts lint --fix --",
+      "react-scripts test --findRelatedTests --watchAll=false --silent"
+    ],
+    "*.scss": [
+      "stylelint --fix"
+    ]
+  }
+}

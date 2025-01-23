@@ -1,0 +1,16 @@
+.body-modal {
+  h3 {
+    margin-bottom: 30px;
+  }
+
+  .groupBtn {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    button:first-child {
+      margin-right: 20px;
+    }
+  }
+}

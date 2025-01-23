@@ -1,0 +1,46 @@
+@use '@atollis/ot_105_5_0090/scss/theme.scss' as theme;
+@use '@atollis/ot_105_5_0090/scss/constants.scss' as const;
+
+.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 140px 200px;
+  box-sizing: border-box;
+  border-radius: const.$borderRadiusElements 0 0 0;
+  @include theme.themed() {
+    background: theme.t('bgPage');
+    background-repeat: round;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 52px;
+    @include theme.themed() {
+      color: theme.t('loginTextHeader');
+    }
+  }
+
+  &__content.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 50px;
+
+    & > .container__item {
+      &:not(:last-child) {
+        padding-right: 20px;
+      }
+      .info {
+        max-width: 800px;
+      }
+    }
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: 15px;
+    left: 200px;
+  }
+}

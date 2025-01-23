@@ -1,0 +1,15 @@
+{
+  "files": {
+    "libs/ot_105_1_0010/.eslintrc": "ef6f20318336bae681b665a589c9de24668a42fe",
+    "libs/ot_105_1_0010/.stylelintrc": "9ec71e91ab3ed5e7a665a38610e59ec27bb1a67f",
+    "libs/ot_105_1_0010/README.md": "e9cac9ec4944f3baf004ad07578ae0aa8a59f407",
+    "libs/ot_105_1_0010/package.json": "24b6c6d9290752072c99a1ea581446b5c7e29e54",
+    "libs/ot_105_1_0010/src/index.ts": "1791226503c58c37893c3f11999e631d1b13586c",
+    "libs/ot_105_1_0010/src/lib/Desktop.tsx": "c9c1457f64da8a2a6aaa6b86b131e9ede34d011a",
+    "libs/ot_105_1_0010/src/lib/routing.tsx": "b00a1a5cc18d65111c9ff81db3b78f73f5868fcc",
+    "libs/ot_105_1_0010/src/react-app-env.d.ts": "d68e4b08bf3e1744d93882dccb00b0d5bfd5ad1d",
+    "libs/ot_105_1_0010/tsconfig.json": "c9eb00aef618108b9bdb00858eeb32396db2f954",
+    "libs/ot_105_1_0010/.rush/temp/shrinkwrap-deps.json": "868c5775105d6f5a6c4d7ba29c1d621e5846a199"
+  },
+  "arguments": "react-scripts lint-staged "
+}

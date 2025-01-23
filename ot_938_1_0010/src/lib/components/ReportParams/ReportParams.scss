@@ -1,0 +1,38 @@
+.report-params-card {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+
+  .group-params {
+    padding-top: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ant-select {
+    margin-bottom: 5px;
+  }
+
+  .select-temp {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .field-with-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    & > .dx-button {
+      min-width: 0;
+
+      .dx-button-content {
+        padding: 8px;
+      }
+    }
+  }
+}

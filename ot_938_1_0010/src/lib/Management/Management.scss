@@ -1,0 +1,16 @@
+.header-wrapper {
+  height: 50px;
+  margin-bottom: -46px;
+  border-bottom: 3px solid #d0e7f3;
+}
+
+.tabs {
+  --tabs-tab-profile-border-color: #75bbde;
+  --tabs-tab-profile-text-color: #333333;
+
+  li {
+    font-weight: 400;
+    margin-right: -64px;
+    padding-bottom: 14px;
+  }
+}

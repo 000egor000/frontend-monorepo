@@ -1,0 +1,212 @@
+@use "@atollis/ot_105_5_0090/scss/theme.scss" as theme;
+
+.report-reglament-card {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+
+  .scrollArea {
+    height: 100%;
+  }
+
+  .report-reglament-content-conteiner {
+    gap: 20px;
+    display: flex;
+    flex-flow: column;
+
+    h3 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+
+      @include theme.themed() {
+        color: theme.t("personalEmailText");
+      }
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0;
+
+      @include theme.themed() {
+        color: theme.t("formErrorMessageText");
+      }
+    }
+
+    .report-reglament-duration-conteiner {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .dx-validationgroup {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    .item-launch-regulament {
+      margin-right: 40px;
+
+      align-items: end;
+
+      button {
+        height: 44px;
+      }
+    }
+  }
+}
+
+.numberbox-container-days {
+  width: 30px;
+}
+
+.report-reglament-content-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    height: 33px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .numberbox {
+    width: 70px;
+  }
+
+  .interval-box {
+    max-width: 120px;
+  }
+
+  .start-end-day-of-mouth-selector {
+    max-width: 120px;
+  }
+
+  .week-day-selector {
+    max-width: 64px;
+  }
+
+  .months-selector {
+    max-width: 80px;
+  }
+
+  .launch-regulament {
+    width: 100%;
+  }
+
+  .required-field::after {
+    content: " *";
+    color: #f04b4b;
+  }
+}
+
+.datebox-container {
+  padding-right: 40px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.reglament-popup-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  min-height: 340px;
+  min-width: 508px;
+
+  .reglament-period-names {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 200px;
+  }
+
+  .reglament-popup-content-interval-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1px 40px 1px 20px;
+    gap: 10px;
+    width: 100%;
+
+    @include theme.themed() {
+      border-left: 2px solid theme.t("fieldLabel");
+    }
+
+    .reglament-popup-content-interval {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .reglament-popup-content-interval-range {
+      .numberbox {
+        width: 100%;
+        max-width: 120px;
+      }
+    }
+
+    .p-over-content {
+      margin-bottom: 0;
+    }
+
+    .dx-buttongroup-wrapper {
+      padding-right: 40px;
+
+      .dx-button {
+        min-width: 30px;
+        width: 100%;
+
+        .dx-button-content {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .dx-datebox.dx-auto-width .dx-texteditor-input,
+  .dx-datebox:not(.dx-texteditor-empty).dx-auto-width .dx-texteditor-input {
+    padding-right: 0;
+  }
+
+  .dx-radiogroup .dx-radiobutton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .dx-radiogroup .dx-radiobutton.dx-item.dx-radiobutton > .dx-item-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.ant-select-dropdown {
+  z-index: 2000;
+  width: fit-content !important;
+}
+
+.ant-picker-dropdown {
+  z-index: 2000;
+}
+
+.ant-select {
+  margin-bottom: 0 !important;
+}

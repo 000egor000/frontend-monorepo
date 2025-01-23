@@ -1,0 +1,44 @@
+@use "@atollis/ot_105_5_0090/scss/theme.scss" as theme;
+
+.campaigns-table {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 20px 20px 24px;
+
+  & * {
+    white-space: normal;
+  }
+
+  td a {
+    @include theme.themed() {
+      color: theme.t("linkColor");
+    }
+  }
+
+  tr.dx-row.is-blocked td,
+  tr.dx-row.is-blocked td a {
+    @include theme.themed() {
+      color: theme.t("tableCellUnlockedColor");
+    }
+  }
+
+  .dx-header-row
+    > td
+    > .dx-datagrid-text-content:not(.dx-sort-indicator):not(.dx-header-filter-indicator) {
+    white-space: break-spaces;
+  }
+
+  .value-wrapper {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    white-space: normal;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
+}
+
+iframe#webpack-dev-server-client-overlay {
+  display: none !important;
+}
